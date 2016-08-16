@@ -1,0 +1,11 @@
+.jumbotron {
+  background-image: url('../images/6-copy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+#header-h1 {
+  margin-top: 150px;
+}
