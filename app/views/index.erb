@@ -1,5 +1,10 @@
 <h1>All Tasks</h1>
 
-<% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">New</span>
+    <% @tasks.each do |task| %>
+      <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+      <% end %>
+  </li>
+</ul>
