@@ -1,5 +1,13 @@
-<a href="/tasks">Task Index</a>
+<ol class="breadcrumb">
+  <li><a href="/tasks">Tasks</a></li>
+  <li class="active"><%= @task.title %></li>
+</ol>
 
-<h1><%= @task.title %></h1>
-
-<p><%= @task.description %></p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @task.title %></h3>
+  </div>
+  <div class="panel-body">
+    <%= @task.description %>
+  </div>
+</div>
